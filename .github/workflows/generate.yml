@@ -1,0 +1,34 @@
+name: Build & deploy site
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Set up Swift docc
+      uses: swift-actions/setup-swift@v2
+    - name: Build documentation
+      run: docc convert --output-path docs StellarStation.docc
+    - name: Upload documentation
+      uses: actions/upload-pages-artifact@v3
+      id: deployment
+      with:
+        path: docs
+    - name: Deploy documentation
+      uses: actions/deploy-pages@v4
+      id: deployment
+      
