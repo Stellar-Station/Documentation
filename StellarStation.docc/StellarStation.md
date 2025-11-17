@@ -18,7 +18,8 @@
 
 ### Mapping
 
-- <doc:MappingGuidelines>
+- <doc:MappingPhilosophy>
+- <doc:MappingChecklist>
 
 ### Antagonists
 
