@@ -14,15 +14,16 @@
 
 ### Essentials
 
-- <doc:WhatIsStellarStation>
+- <doc:what-is-stellar-station>
+- <doc:species>
 
 ### Mapping
 
-- <doc:MappingPhilosophy>
-- <doc:MappingChecklist>
+- <doc:mapping-philosophy>
+- <doc:mapping-checklist>
 
 ### Antagonists
 
-- <doc:Gorlex>
-- <doc:Heretics>
-- <doc:Traitor>
+- <doc:gorlex>
+- <doc:heretics>
+- <doc:traitor>
